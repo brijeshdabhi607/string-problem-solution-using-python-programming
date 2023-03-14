@@ -1,0 +1,11 @@
+str="geeksforgeek"
+pos=len(str)//2
+lst=[]
+for i in range(len(str)):
+    if i>=pos:
+        lst.append(str[pos].upper())
+        pos=pos+1
+    else:
+        lst.append(str[i].lower())
+        
+print("".join(lst))
