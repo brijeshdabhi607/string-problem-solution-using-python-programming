@@ -1,0 +1,6 @@
+str="geeksforgeeks 33 best"
+lst=str.split(" ")
+count=0
+for i in lst:
+    count=count+len(i)
+print(count)
