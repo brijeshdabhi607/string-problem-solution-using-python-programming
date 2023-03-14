@@ -1,0 +1,7 @@
+str="i am laxmi"
+ssplit=str.split()
+lst=[]
+for i in ssplit:
+    if len(i)%2==0:
+        lst.append(i)
+print(" ".join(lst))
