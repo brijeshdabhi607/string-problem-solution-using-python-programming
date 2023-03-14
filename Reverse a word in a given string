@@ -1,0 +1,11 @@
+def reverseword(str):
+    splitlst=str.split()
+    lst=[]
+    for i in range(len(splitlst)):
+        lst.append(splitlst[len(splitlst)-1-i])
+    print(" ".join(lst))
+
+
+
+str="geeks quiz practice code"
+reverseword(str)
