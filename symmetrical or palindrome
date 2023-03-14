@@ -1,0 +1,30 @@
+def symmetricalchecker(str):
+    a=""
+    b=""
+    c=len(str)//2 
+    for i in range(len(str)//2):
+        a=a+a.join(str[i])
+    for j in range(len(str)//2):
+        b=b+b.join(str[c])
+        c=c+1
+    if a==b:
+        print("given string is symmetrical")
+    else:
+        print("given string is not symmetrical")
+
+def pelindromchecker(str):
+    start=0
+    end=len(str)-1
+    for i in range(len(str)//2):
+        if not str[start]== str[end]:
+            print("this is not a pelindrom")
+            break
+        start=start+1
+        end=end-1
+    else:
+        print("this is a pelindrome")
+        
+str="amaama"
+symmetricalchecker(str)
+pelindromchecker(str)
+
